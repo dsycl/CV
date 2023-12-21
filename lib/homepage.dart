@@ -4,28 +4,24 @@ import 'educational_background.dart';
 import 'skills.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: MyApp(),
+    title: "Curriculum Vitae",
+    home: Firstpage(),
   ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class Firstpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 1, 11, 22),
       appBar: AppBar(
-        title: const Center(
-          child: Text(
-            'Curriculum Vitae',
-          ),
+        title: Center(
+          child: Text('My Curriculum Vitae'),
         ),
-        backgroundColor: Color.fromARGB(255, 104, 3, 37),
+        backgroundColor: Color.fromRGBO(236, 114, 0, 0.957),
       ),
-      body: Padding(
+        body: Padding(
         padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,6 +137,9 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
+     
+    
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
     );
   }
 }
